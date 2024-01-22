@@ -32,16 +32,19 @@
         .font-poppins {
             font-family: "Poppins", sans-serif;
         }
+        body{
+            overflow-x: hidden;
+        }
     </style>
 
 </head>
 
-<body>
+<body class="border border-red-600">
     <!-- header section starts here -->
     <header>
-        <nav class="container mx-auto w-[1170px] py-2 font-poppins">
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
+        <nav class="container mx-auto lg:w-[1170px] py-2 font-poppins">
+            <div class="navbar bg-base-100 w-1/4 lg:w-auto">
+                <div class="navbar-start ">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -82,30 +85,101 @@
         <!-- navbar ends here -->
 
         <!-- Top banner starts here -->
-        <div class=" container w-full lg:w-[1170px] h-auto lg:h-[550px] mx-auto bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.2)),url(images/banner.png)] bg-no-repeat bg-center bg-cover text-white text-center flex justify-center items-center">
-            
+        <div
+            class=" container w-full lg:w-[1170px] h-auto py-8 px-1 lg:h-[550px] mx-auto bg-[linear-gradient(45deg,rgba(0,0,0,0.7),rgba(0,0,0,0.2)),url(images/banner.png)] bg-no-repeat bg-center bg-cover text-white text-center flex justify-center items-center">
+
             <div class=" flex flex-col justify-center items-center gap-8 my-auto">
-                <h1 class="text-4xl lg:text-7xl font-extrabold font-garamond text-center">We Provide Effective <br> Legal
+                <h1 class="text-4xl lg:text-7xl font-extrabold font-garamond text-center">We Provide Effective <br>
+                    Legal
                     Solutions</h1>
-    
+
                 <p class="w-2/3 lg:w-[670px] mx-auto">
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     alteration in some form, by injected humour.
                 </p>
-    
+
                 <div class="w-2/3 lg:w-full flex flex-col lg:flex-row items-center gap-5 px-2">
-                    <input type="text" placeholder="Search Your Services" class="input input-bordered flex-1">
+                    <input type="text" placeholder="Search Your Services" class="input input-bordered flex-1 h-12 ">
                     <button class="btn bg-[#B68C5A] text-lg font-semibold border-transparent w-36">Search</button>
                 </div>
             </div>
-            
+
         </div>
     </header>
 
-    <main>
+    <main class=" mx-auto lg:w-[1170px] my-12 lg:my-36 font-poppins ">
+        <!-- the legal practice area -->
+        <section class="">
+            <div class="text-center space-y-6">
+                <h1 class="font-garamond text-4xl font-extrabold">The Legal Practice Area</h1>
+                <p class="w-[90%] lg:w-[720px] mx-auto">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour.
+                </p>
+            </div>
+            <!-- grid container -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 my-16">
+                <!-- card 1 -->
+                <div class=" space-y-7 px-7 lg:px-16 py-7 lg:py-14 text-center border border-[#E7E7E7] flex flex-col justify-center items-center">
+                    <img src="images/business.png" alt="">
+                    <h3 class="font-garamond text-3xl font-extrabold">Business Law</h3>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                    <img src="images/Frame.png" alt="">
+                </div>
 
-        <section>
-            
+                <!-- card 2 -->
+                <div class="space-y-7 px-7 lg:px-16 py-7 lg:py-14 text-center border border-[#E7E7E7] flex flex-col justify-center items-center">
+                    <img src="images/criminal.png" alt="">
+                    <h3 class="font-garamond text-3xl font-extrabold">Criminal Law</h3>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                    <img src="images/Frame.png" alt="">
+                </div>
+
+                <!-- card 3 -->
+                <div class="space-y-7 px-7 lg:px-16 py-7 lg:py-14 text-center border border-[#E7E7E7] flex flex-col justify-center items-center">
+                    <img src="images/child.png" alt="">
+                    <h3 class="font-garamond text-3xl font-extrabold">Child Support</h3>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                    <img src="images/Frame.png" alt="">
+                </div>
+
+                <!-- card 4 -->
+                <div class="space-y-7 px-7 lg:px-16 py-7 lg:py-14 text-center border border-[#E7E7E7] flex flex-col justify-center items-center">
+                    <img src="images/education.png" alt="">
+                    <h3 class="font-garamond text-3xl font-extrabold">Education Law</h3>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                    <img src="images/Frame.png" alt="">
+                </div>
+
+                <!-- card 5 -->
+                <div class="space-y-7 px-7 lg:px-16 py-7 lg:py-14 text-center border border-[#E7E7E7] flex flex-col justify-center items-center">
+                    <img src="images/divorce.png" alt="">
+                    <h3 class="font-garamond text-3xl font-extrabold">Divorce Law</h3>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                    <img src="images/Frame.png" alt="">
+                </div>
+
+                <!-- card 6 -->
+                <div class="space-y-7 px-7 lg:px-16 py-7 lg:py-14 text-center border border-[#E7E7E7] flex flex-col justify-center items-center">
+                    <img src="images//tax.png" alt="">
+                    <h3 class="font-garamond text-3xl font-extrabold">Tax Law</h3>
+                    <p>
+                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                    </p>
+                    <img src="images/Frame.png" alt="">
+                </div>
+
+            </div>
         </section>
 
     </main>
